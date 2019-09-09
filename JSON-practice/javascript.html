@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="context">context</div>
+    
+</body>
+</html>
+
+<script>
+// function myfunction(){
+//     // content 
+
+//     console.log("fucntion!!")
+// // return
+//     return "end"
+// }
+
+// what
+
+function aa(){
+    // return false;
+    console.log('context',this)
+    setTimeout(function(){
+        console.log("Settimeout this",this)
+    },5000)
+    document.querySelector("#context").innerHTML="Eric"
+}
+
+document.querySelector("#context").addEventListener("click", aa)
+
+
+var a= plus(2,3)
+function plus(a,b){
+    console.log('plue',this)
+    return a+b;
+}
+
+let obj ={
+    function1: function(){
+        console.log(this)
+    }
+}
+
+// 判斷式 很多種選擇只能選一個//
+// even, odd 單數,雙數//
+var isEvenday = true
+var isoddnday = false
+var today = 7
+if (today % 2==1){
+
+    console.log("Eat rice")
+
+}else{
+
+    console.log("Eat noodle")
+
+}
+
+
+
+
+
+//function aaa(1){
+
+    // 2 content
+    // 3 return
+//}
+
+
+</script>
