@@ -24,54 +24,96 @@
 
 // what
 
-function aa(){
-    // return false;
-    console.log('context',this)
-    setTimeout(function(){
-        console.log("Settimeout this",this)
-    },5000)
-    document.querySelector("#context").innerHTML="Eric"
-}
+// function aa(){
+//     // return false;
+//     console.log('context',this)
+//     setTimeout(function(){
+//         console.log("Settimeout this",this)
+//     },5000)
+//     document.querySelector("#context").innerHTML="Eric"
+// }
 
-document.querySelector("#context").addEventListener("click", aa)
+// document.querySelector("#context").addEventListener("click", aa)
 
 
-var a= plus(2,3)
-function plus(a,b){
-    console.log('plue',this)
-    return a+b;
-}
+// var a= plus(2,3)
+// function plus(a,b){
+//     console.log('plue',this)
+//     return a+b;
+// }
 
-let obj ={
-    function1: function(){
-        console.log(this)
-    }
-}
+// let obj ={
+//     function1: function(){
+//         console.log(this)
+//     }
+// }
 
 // 判斷式 很多種選擇只能選一個//
 // even, odd 單數,雙數//
-var isEvenday = true
-var isoddnday = false
-var today = 7
-if (today % 2==1){
+// var isEvenday = true
+// var isoddnday = false
+//var today = 7
+// if (today % 2==1){
 
-    console.log("Eat rice")
+//     console.log("Eat rice")
 
-}else{
+// }else{
 
-    console.log("Eat noodle")
+//     console.log("Eat noodle")
 
-}
+// }
 
+// ? = if &&  : =else
+//var eat = today == 7 ? "rice": "noodle" 
 
-
-
+//console.log(eat)
 
 //function aaa(1){
 
     // 2 content
     // 3 return
 //}
+
+
+// for (1;2;3){
+    //4 重富內容
+//}
+
+// for (i=1;i<=6;i+=1){
+// console.log(i)
+// }
+
+
+
+
+// var weekday  = 2
+
+// switch(weekday){
+//     case 3:
+//     console.log ("eat noodle")
+//     break;
+//     case 5:
+//     console.log("fire chick")
+//     break;
+//     case 7:
+//     console.log("pizza")
+//     break; 
+//     default:
+//     console.log('I dont need Thanks')
+
+// }
+
+
+
+
+//////while 判斷///
+// let i =0
+
+// while (i<0.5){
+//     console.log(i)
+//     i = Math.random()
+// }
+
 
 
 </script>
